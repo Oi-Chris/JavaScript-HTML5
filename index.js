@@ -7,6 +7,8 @@ const scoreEl = document.querySelector('#scoreEl')
 const startGameBtn = document.querySelector('#startGameBtn')
 const frontDisplay = document.querySelector('#frontDisplay')
 const endScore = document.querySelector('#endScore')
+const canvasEl = document.querySelector('#canvasEl')
+
 
 
 class Player
@@ -257,7 +259,7 @@ function animate()
     })
 }
 
-addEventListener('click', (event) =>
+canvasEl.addEventListener('click', (event) =>
 {
     //console.log(particles)
     const angle = Math.atan2(event.clientY - canvas.height/2, event.clientX - canvas.width/2)
